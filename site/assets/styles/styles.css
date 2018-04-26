@@ -1,0 +1,15 @@
+$mainBlue: #2f5572;
+
+* {
+	font-family: Helvetica, sans-serif;
+	padding: 30px;
+	margin: 10px;
+	columns: 300px 3;
+	color: $mainBlue;
+}
+
+.box {
+	a {
+		text-decoration: none;
+	}
+}

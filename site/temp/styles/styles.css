@@ -1,0 +1,12 @@
+* {
+	font-family: Helvetica, sans-serif;
+	padding: 30px;
+	margin: 10px;
+	-webkit-columns: 300px 3;
+	        columns: 300px 3;
+	color: #2f5572;
+}
+
+.box a {
+		text-decoration: none;
+	}

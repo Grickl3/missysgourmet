@@ -1,16 +1,46 @@
 .splash {
 
 	&__main-img {
-		margin-left: 40px;
-		max-width: 85%;
+		
+		width: 120%;
+		margin: 60px 0 0 -30px;
+	
+		/*border: 1px solid pink;*/
+
+		@media (min-width: 530px) {
+			margin-left: 40px;
+			max-width: 65%;
+
+			/*border: 1px solid blue;*/
+		}
+
+		@media (min-width: 900px) {
+			/*border: 1px solid green;*/
+		}
+
+		@media (min-width: 1200px) {
+			/*border: 1px solid white;*/
+		}
 	}
 
 	&__secondary-img {
+
 		position: absolute;
 		top: -200px;
-		right: 40px;
+		right: -150px;
 		z-index: -1;
 
-		max-height: 1800px;
+		max-height: 1200px;
+		opacity: .5;
+
+		@media (min-width: 900px) {
+			position: absolute;
+			top: -200px;
+			right: 40px;
+			z-index: -1;
+
+			max-height: 1800px;
+			opacity: 1;
+		}
 	}
 }

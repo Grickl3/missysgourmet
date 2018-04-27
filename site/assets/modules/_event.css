@@ -1,0 +1,8 @@
+.event__toggle {
+	height: 12px;
+	transition: rotate 3s;
+
+	&--open {
+		transform: rotate(90deg);
+	}
+}

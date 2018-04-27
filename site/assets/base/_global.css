@@ -1,8 +1,10 @@
 * {
 	font-family: Helvetica;
+	color: #fff;
+	/*font-family: Times;*/
 }
 
-/*body {
-	background-image: url(/assets/img/chalkBoard_fullsize.jpg);
+body {
+	background-image: url(../../assets/img/chalkBoard_fullsize.jpg);
 	background: no-repeat cover;
-}*/
+}

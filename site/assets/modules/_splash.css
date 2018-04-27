@@ -1,0 +1,7 @@
+.splash {
+
+	&__main-img {
+		margin-left: 40px;
+		max-width: 85%;
+	}
+}

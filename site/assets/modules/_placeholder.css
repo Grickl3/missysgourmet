@@ -1,0 +1,28 @@
+.placeholder {
+	position: relative;
+	border: 1px solid red;
+	display: block;
+	padding: 20px;
+	margin:50px;
+
+	&--big {
+		width: 60%;
+		/*padding:180px;*/
+	}
+
+	&--medium {
+		width: 30%;
+		/*padding: 75px;*/
+	}
+
+	&--right {
+		/*right: 20px;*/
+		/*float: right;*/
+	}
+
+	&--left {
+		/*left: 20px;*/
+		/*float:left;*/
+	}
+
+}

@@ -1,11 +1,21 @@
-* {
+/** {
 	font-family: Helvetica;
 	color: #fff;
-	/*font-family: Times;*/
-}
+}*/
 
 body {
 	background-image: url(../../assets/img/chalkBoard_fullsize.jpg);
 	background: no-repeat cover;
 	background-attachment: fixed;
+}
+
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+}
+
+p {
+	font-family: 'Crimson Text', serif;
+	color: #fff;
 }

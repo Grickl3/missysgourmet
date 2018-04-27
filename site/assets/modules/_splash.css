@@ -2,12 +2,13 @@
 
 	&__main-img {
 		
-		width: 120%;
-		margin: 60px 0 0 -30px;
+		width: 105%;
+		left: auto;
+		margin-top: 70px;
 	
 		/*border: 1px solid pink;*/
 
-		@media (min-width: 530px) {
+		@media (min-width: 700px) {
 			margin-left: 40px;
 			max-width: 65%;
 

@@ -341,11 +341,6 @@ template {
   display: none;
 }
 
-/** {
-	font-family: Helvetica;
-	color: #fff;
-}*/
-
 body {
 	background-image: url(../../assets/img/chalkBoard_fullsize.jpg);
 	background: no-repeat cover;
@@ -353,12 +348,30 @@ body {
 }
 
 h1 {
+
+	margin: 15px 0;
 	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 3rem;
 	color: #fff;
 }
 
+@media (min-width: 800px) {
+
+h1 {
+		font-weight: 100;
+		font-size: 5rem;
+		color: #fff
+}
+	}
+
 p {
-	font-family: 'Crimson Text', serif;
+	/*fon t-family: 'Crimson Text', serif;*/
+	font-family: 'IBM Plex Serif', serif;
+	font-size: 1.2rem;
+	font-weight: 300;
+	line-height: 1.6rem;
+
 	color: #fff;
 }
 
@@ -534,7 +547,7 @@ p {
 		-webkit-transform: translateX(-3.5%);
 		        transform: translateX(-3.5%);
 
-		font-weight: 200;
+		font-weight: 900;
 	}
 
 @media (min-width: 800px) {
@@ -627,6 +640,55 @@ p {
 				background-color: #fff;
 			}
 
+.wrapper {
+	/*width: 100%;*/
+	margin: 50px 0;
+	padding: 12px;
+
+}
+
+@media (min-width: 800px) {
+
+.wrapper {
+		padding: 30px
+
+}
+	}
+
+/*&__large {
+		max-width: 1200px;
+	}*/
+
+.wrapper__inner--medium {
+		position: relative;
+		margin: 10px; 
+		max-width: 80%;
+
+	}
+
+@media (min-width: 800px) {
+
+.wrapper__inner--medium {
+			margin-left: 100px;
+			max-width: 900px
+			
+
+
+			/*border: 1px solid $meat;*/
+
+	}
+		}
+
+.wrapper--dark {
+		background-color: rgba(23,22,30, .85);
+		/*border: 1px solid $meat;*/
+
+	}
+
+.wrapper--full-width {
+		width: 100%;
+	}
+
 .event__toggle {
 	height: 12px;
 	transition: rotate 3s;
@@ -641,14 +703,44 @@ p {
 	position: relative;
 	bottom: 0;
 	padding: 45px 0;
-	height: 130px;
+	height: 100px;
 
-	background-color: darkgrey;
+	background-color: #17161e;
 
-	color: #fff;
-	font-weight: 200;
 	text-align: center;
+
+	border-top: 4px solid #a83d19;
+	border-bottom: 1px solid #17161e;
 }
+
+.footer__text {
+		font-family: 'Montserrat', sans-serif;
+		color: #a83d19;
+	}
+
+.footer__text a {
+			text-decoration: none;
+			color: #a83d19;
+		}
+
+.footer__text--big {
+		font-weight: 100;
+		font-size: 2rem;
+	}
+
+.sqglz {
+	display: block;
+	padding: 60px 0;
+	
+	font-weight: 500;
+	font-size: .8rem;
+
+	background-color: #17161e;
+}
+
+/*.sqglz:visited {
+
+	}*/
 
 .placeholder {
 	position: relative;
@@ -679,23 +771,5 @@ p {
 		/*float:left;*/
 	}
 
-.section {
-	display: block;
-	margin: 10px;
-	padding: 8px;
-	/*border: 1px solid blue;*/
-}
-
-                                             
-  
-               
-                            
-
-
-
-
-
-
-
-
-                
+          
+    

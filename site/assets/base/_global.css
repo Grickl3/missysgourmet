@@ -1,7 +1,4 @@
-/** {
-	font-family: Helvetica;
-	color: #fff;
-}*/
+
 
 body {
 	background-image: url(../../assets/img/chalkBoard_fullsize.jpg);
@@ -11,11 +8,27 @@ body {
 
 
 h1 {
+
+	margin: 15px 0;
 	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 3rem;
 	color: #fff;
+
+
+	@media (min-width: 800px) {
+		font-weight: 100;
+		font-size: 5rem;
+		color: #fff;
+	}
 }
 
 p {
-	font-family: 'Crimson Text', serif;
+	/*fon t-family: 'Crimson Text', serif;*/
+	font-family: 'IBM Plex Serif', serif;
+	font-size: 1.2rem;
+	font-weight: 300;
+	line-height: 1.6rem;
+
 	color: #fff;
 }

@@ -2,11 +2,42 @@
 	position: relative;
 	bottom: 0;
 	padding: 45px 0;
-	height: 130px;
+	height: 100px;
 
-	background-color: darkgrey;
+	background-color: $darkGrey;
 
-	color: #fff;
-	font-weight: 200;
 	text-align: center;
+
+	border-top: 4px solid $meat;
+	border-bottom: 1px solid $darkGrey;
+
+	&__text {
+		font-family: 'Montserrat', sans-serif;
+		color: $meat;
+
+		a {
+			text-decoration: none;
+			color: $meat;
+		}
+	}
+
+	&__text--big {
+		font-weight: 100;
+		font-size: 2rem;
+	}
 }
+
+
+.sqglz {
+	display: block;
+	padding: 60px 0;
+	
+	font-weight: 500;
+	font-size: .8rem;
+
+	background-color: $darkGrey;
+}
+
+	/*.sqglz:visited {
+
+	}*/

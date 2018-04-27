@@ -87,7 +87,7 @@
 		transform-origin: 100% 0%;
 		transform: translateX(-3.5%);
 
-		font-weight: 200;
+		font-weight: 900;
 
 		@media (min-width: 800px) {
 			margin-top: -1.5rem ;

@@ -7,6 +7,7 @@
 	<meta name="keywords" content="cuisine, gourmet, fine dining, foodie">
 	<meta name="description" content="">
 	<link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
+	<!-- <meta name="pinterest" content="nopin" /> -->
 	
 </head>
 <body>
@@ -16,16 +17,23 @@
 			<div class="home-button">
 				<a href="index.html"><span>Missy's Gourmet</span></a>
 			</div><!-- HOME -->
-			<a href="events.html"><li>Events</li></a>
-			<a href="contact.html"><li>Contact</li></a>
+			<a class="navigation__page-link" href="events.html"><li>Events</li></a>
+			<a class="navigation__page-link" href="contact.html"><li>Contact</li></a>
 		</ul>
 	</nav>
 
 	<div class="splash section">
 		<picture>
-			<img class="splash__main-img" src="assets/img/headerText_2393x1434.png">
-			<img class="splash__secondary-img splash--right" src="assets/img/knife_800x3000.png">
+			<img class="splash__main-img" src="assets/img/headerText_1500x900.png" nopin="nopin"><!--  -->
 		</picture>
+		<!-- <picture>
+			<source  srcset="/assets/img/knife_800x3000.png" media="(min-width: 1200px)" alt="chef's knife">
+			<source  srcset="/assets/img/knife_400x1500.png" media="(min-width: 760px)" alt="chef's knife">
+			<img class="splash__secondary-img" src="/assets/img/knife_800x3000.png" alt="chef's knife">
+		</picture> -->
+
+		<img class="splash__secondary-img" srcset="/assets/img/knife_800x3000.png" 800w, /assets/img/knife_400x1500.png 400w alt="chefs knife">
+
 	</div><!-- SPLASH -->
 
 	<div class="service-offering section">

@@ -6,5 +6,5 @@
 
 body {
 	background-image: url(../../assets/img/chalkBoard_fullsize.jpg);
-	background: no-repeat cover;
+	background: no-repeat cover fixed;
 }

@@ -349,12 +349,21 @@ template {
 
 body {
 	background-image: url(../../assets/img/chalkBoard_fullsize.jpg);
-	background: no-repeat cover;
+	background: no-repeat cover fixed;
 }
 
 .splash__main-img {
 		margin-left: 40px;
 		max-width: 85%;
+	}
+
+.splash__secondary-img {
+		position: absolute;
+		top: -200px;
+		right: 40px;
+		z-index: -1;
+
+		max-height: 1800px;
 	}
 
 .event__toggle {
@@ -413,11 +422,10 @@ body {
 	display: block;
 	margin: 10px;
 	padding: 8px;
-	border: 1px solid blue;
+	/*border: 1px solid blue;*/
 }
 
-
-
+   
  
 
 

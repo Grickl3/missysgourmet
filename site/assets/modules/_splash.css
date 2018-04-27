@@ -4,4 +4,13 @@
 		margin-left: 40px;
 		max-width: 85%;
 	}
+
+	&__secondary-img {
+		position: absolute;
+		top: -200px;
+		right: 40px;
+		z-index: -1;
+
+		max-height: 1800px;
+	}
 }

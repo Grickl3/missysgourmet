@@ -10,13 +10,17 @@
 	padding: 0px 0 12px 0;
 
 	&--closed {
+		height: 60px;
+		transition: height 1s;
 		transition: background-color .3s ease-out;
-		background-color: rgba($darkGrey, 0);
+		background-color: rgba($darkGrey, .80);
 	}
 
 	&--open {
+		height: 225px;
+		transition: height 1s;
 		transition: background-color .3s ease-out;
-		background-color: rgba($darkGrey, .65);
+		background-color: rgba($darkGrey, .95);
 	}
 
 	&__content--closed  {
@@ -87,7 +91,8 @@
 		transform-origin: 100% 0%;
 		transform: translateX(-3.5%);
 
-		font-weight: 900;
+		font-weight: 500;
+		font-size: 1.6rem;
 
 		@media (min-width: 800px) {
 			margin-top: -1.5rem ;

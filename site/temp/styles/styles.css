@@ -345,14 +345,15 @@ body {
 	background-image: url(../../assets/img/chalkBoard_fullsize.jpg);
 	background: no-repeat cover;
 	background-attachment: fixed;
+	overflow-x: hidden;
 }
 
 h1 {
 
 	margin: 15px 0;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 300;
-	font-size: 3rem;
+	font-weight: 500;
+	font-size: 2.4rem;
 	color: #fff;
 }
 
@@ -375,6 +376,14 @@ p {
 	color: #fff;
 }
 
+@media (min-width: 800px) {
+
+p {
+		font-size: 1.4rem;
+		line-height: 2rem
+}
+	}
+
 /*@define-mixin atSmall {
 	@media (min-width: 530px) {
 		@mixin-content;
@@ -389,9 +398,9 @@ p {
 
 .splash__main-img {
 		
-		width: 105%;
+		width: 100%;
 		left: auto;
-		margin-top: 70px;
+		margin-top: 90px;
 	}
 
 /*border: 1px solid pink;*/
@@ -422,7 +431,7 @@ p {
 
 .splash__secondary-img {
 
-		position: absolute;
+		position: fixed;
 		top: -200px;
 		right: -150px;
 		z-index: -1;
@@ -434,7 +443,7 @@ p {
 @media (min-width: 900px) {
 
 .splash__secondary-img {
-			position: absolute;
+			position: fixed;
 			top: -200px;
 			right: 40px;
 			z-index: -1;
@@ -455,13 +464,17 @@ p {
 }
 
 .navigation--closed {
+		height: 60px;
+		transition: height 1s;
 		transition: background-color .3s ease-out;
-		background-color: rgba(23,22,30, 0);
+		background-color: rgba(23,22,30, .80);
 	}
 
 .navigation--open {
+		height: 225px;
+		transition: height 1s;
 		transition: background-color .3s ease-out;
-		background-color: rgba(23,22,30, .65);
+		background-color: rgba(23,22,30, .95);
 	}
 
 .navigation__content--closed  {
@@ -547,7 +560,8 @@ p {
 		-webkit-transform: translateX(-3.5%);
 		        transform: translateX(-3.5%);
 
-		font-weight: 900;
+		font-weight: 500;
+		font-size: 1.6rem;
 	}
 
 @media (min-width: 800px) {
@@ -670,7 +684,7 @@ p {
 
 .wrapper__inner--medium {
 			margin-left: 100px;
-			max-width: 900px
+			max-width: 1000px
 			
 
 
@@ -744,10 +758,16 @@ p {
 
 .placeholder {
 	position: relative;
-	border: 1px solid red;
+	border: 1px solid rgba(255,255,255, .3);
 	display: block;
 	padding: 20px;
 	margin:50px;
+
+	font-family: Montserrat, sans-serif;
+	font-weight: 100;
+	font-size: 2rem;
+	color: #fff;
+	text-align: center;
 
 }
 
@@ -771,5 +791,7 @@ p {
 		/*float:left;*/
 	}
 
+                        
+    
           
     

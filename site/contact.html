@@ -13,15 +13,27 @@
 	
 </head>
 <body>
-	<nav class="navigation">
-		<ul>
-			<div class="home-button">
-				<a href="index.html"><span>Missy's Gourmet</span></a>
-			</div><!-- HOME -->
-			<a href="events.html"><li>Events</li></a>
-			<a href="contact.html"><li>Contact</li></a>
-		</ul>
+	<nav class="navigation navigation--closed" id="nav"> 
+		<div class="hamburger" id="hamburger">
+			<div class="hamburger--top top"></div>
+			<div class="hamburger--middle middle"></div>
+			<div class="hamburger--bottom bottom"></div>
+		</div><!-- HAMBURGER -->
+		<div class="navigation__content--closed" id="nav-content">
+			<ul>
+				<li><a class="navigation__page-link" href="index.html">Home</a></li>
+				<li><a class="navigation__page-link" href="events.html">Events</a></li>
+				<li><a class="navigation__page-link" href="contact.html">Contact</a></li>
+			</ul>
+		</div><!-- NAVIGATION CONTENT -->
 	</nav>
+	
+<script src="scripts/vanilla.js" type="text/javascript">
+</script>
+
+<script type="text/javascript">
+	hamburger.addEventListener("click", toggleNav);
+</script>
 
 </body>
 </html>

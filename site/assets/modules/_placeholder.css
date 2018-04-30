@@ -1,9 +1,15 @@
 .placeholder {
 	position: relative;
-	border: 1px solid red;
+	border: 1px solid rgba(255,255,255, .3);
 	display: block;
 	padding: 20px;
 	margin:50px;
+
+	font-family: Montserrat, sans-serif;
+	font-weight: 100;
+	font-size: 2rem;
+	color: #fff;
+	text-align: center;
 
 	&--big {
 		width: 60%;
@@ -26,3 +32,4 @@
 	}
 
 }
+

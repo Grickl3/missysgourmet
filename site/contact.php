@@ -50,14 +50,14 @@ if($_POST["submit"]) {
 		<h1 class="wrapper__inner--medium">Contact Us.</h1>
 		<p class="wrapper__inner--medium">Interested in having Missy cater your next event or in attending one of Missy's pop-up events? Drop us a line. We'll make it happen.</p>
 
-	    <form class="contact-from__stack" method="post" action="contact.php">
-	        <label class="contact-from__body">Name:</label>
+	    <form class="contact-form__stack" method="post" action="contact.php">
+	        <label class="contact-form__body">Name:</label>
 	        <input name="sender">
 
-	        <label class="contact-from__body">Email address:</label>
+	        <label class="contact-form__body">Email address:</label>
 	        <input name="senderEmail">
 
-	        <label class="contact-from__body">Message:</label>
+	        <label class="contact-form__body">Message:</label>
 	        <textarea rows="5" cols="20" name="message"></textarea>
 
 	        <input id="contact-submit" type="submit" name="submit">

@@ -13,8 +13,7 @@ if($_POST["submit"]) {
 
 }
 
-?>
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html>
 <head>
 	<title>Contact</title>
@@ -51,7 +50,7 @@ if($_POST["submit"]) {
 		<h1 class="wrapper__inner--medium">Contact Us.</h1>
 		<p class="wrapper__inner--medium">Interested in having Missy cater your next event or in attending one of Missy's pop-up events? Drop us a line. We'll make it happen.</p>
 
-	    <form class="contact-from__stack" method="post" action="index.php">
+	    <form class="contact-from__stack" method="post" action="contact.php">
 	        <label class="contact-from__body">Name:</label>
 	        <input name="sender">
 

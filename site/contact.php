@@ -44,10 +44,9 @@ if($_POST["submit"]) {
 		</div><!-- NAVIGATION CONTENT -->
 	</nav>
 	
-	<div class="contact-form">
-
-		<h1>Contact Us.</h1>
-		<h3>Interested in having Missy cater your next event or in attending one of Missy's pop-up events? Drop us a line. We'll make it happen.</h3>
+	<div class="contact-form wrapper">
+		<h1 class="wrapper__inner--medium">Contact Us.</h1>
+		<h3 class="wrapper__inner--medium">Interested in having Missy cater your next event or in attending one of Missy's pop-up events? Drop us a line. We'll make it happen.</h3>
 
 	    <form class="stack" method="post" action="index.php">
 	        <label class="body">Name:</label>

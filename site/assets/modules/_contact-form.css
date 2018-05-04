@@ -1,0 +1,31 @@
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__stack {
+		display: flex;
+		flex-direction: column;
+
+		/*margin-top: 60px;*/
+		/*min-width: 500px;*/
+		/*max-width: 700px;*/
+	}
+
+	&__body {
+		color: #fff;
+		font-size: 1.2em;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 300;
+
+		/*margin: 12px;*/
+	}
+}
+
+#contact-submit {
+	margin: 16px;
+	border-radius: 5px;
+	height: 48px;
+	font-size: 1.4em;
+}
+

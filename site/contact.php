@@ -25,7 +25,10 @@ if($_POST["submit"]) {
 	<link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
 	<!-- <meta name="pinterest" content="nopin" /> -->
 
-	<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,500,500i,900,900i" rel="stylesheet">
+
+
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:100,100i,300,300i,500,500i,700,700i" rel="stylesheet">
 	
 </head>
 <body>
@@ -46,19 +49,19 @@ if($_POST["submit"]) {
 	
 	<div class="contact-form wrapper">
 		<h1 class="wrapper__inner--medium">Contact Us.</h1>
-		<h3 class="wrapper__inner--medium">Interested in having Missy cater your next event or in attending one of Missy's pop-up events? Drop us a line. We'll make it happen.</h3>
+		<p class="wrapper__inner--medium">Interested in having Missy cater your next event or in attending one of Missy's pop-up events? Drop us a line. We'll make it happen.</p>
 
-	    <form class="stack" method="post" action="index.php">
-	        <label class="body">Name:</label>
+	    <form class="contact-from__stack" method="post" action="index.php">
+	        <label class="contact-from__body">Name:</label>
 	        <input name="sender">
 
-	        <label class="body">Email address:</label>
+	        <label class="contact-from__body">Email address:</label>
 	        <input name="senderEmail">
 
-	        <label class="body">Message:</label>
+	        <label class="contact-from__body">Message:</label>
 	        <textarea rows="5" cols="20" name="message"></textarea>
 
-	        <input id="submit" type="submit" name="submit">
+	        <input id="contact-submit" type="submit" name="submit">
 	    </form>
 
     </div><!-- END CONTACT FORM -->

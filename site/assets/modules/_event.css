@@ -1,8 +1,33 @@
-.event__toggle {
-	height: 12px;
-	transition: rotate 3s;
+.event {
 
-	&--open {
-		transform: rotate(90deg);
+	&__toggle {
+		height: 12px;
+		transition: rotate 3s;
+
+		&--open {
+			transform: rotate(90deg);
+		}	
 	}
-}
+
+	&__copy {
+		color: #fff;
+	}
+
+	&__name {
+		
+	}
+
+	&__date {
+		
+	}
+
+	&__blurb {
+
+	}
+
+	&__description {
+
+	}
+} 
+
+

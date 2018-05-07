@@ -705,13 +705,33 @@ p {
 	}
 
 .event__toggle {
-	height: 12px;
-	transition: rotate 3s;
-}
+		height: 12px;
+		transition: rotate 3s;	
+	}
 
 .event__toggle--open {
-		-webkit-transform: rotate(90deg);
-		        transform: rotate(90deg);
+			-webkit-transform: rotate(90deg);
+			        transform: rotate(90deg);
+		}
+
+.event__copy {
+		color: #fff;
+	}
+
+.event__name {
+		
+	}
+
+.event__date {
+		
+	}
+
+.event__blurb {
+
+	}
+
+.event__description {
+
 	}
 
 .footer {
@@ -826,4 +846,4 @@ p {
                            
     
                 
-    
+               

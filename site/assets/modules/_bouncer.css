@@ -18,23 +18,65 @@
 	&__form-box {
 		z-index: 2;
 		position: fixed;
-		top: 200px;
-		margin: 150px 200px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		top: 75px;
+		/*margin: 150px 200px;*/
+		width: 100%;
 
+		text-align: center;
 		/*background-color: grey;*/
+
+		@media (min-width: 800px) {
+			top: 200px;
+		}
 	}
 
 	&__form-box--hidden {
 		display: none;
 	}
+
+	&__label {
+		display: block;
+		margin: 40px;
+
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 100;
+		font-size: 2rem;
+		color: #fff;
+
+	}
+
+	&__input {
+		display: block;
+		margin: 40px;
+		padding: 5px;
+		max-width: 300px;
+
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 100;
+		font-size: 2.5rem;
+		color: $darkGrey;
+		border-radius: 13px;
+
+		@media (min-width: 800px) {
+			padding: 20px;
+			max-width: 500px;
+		}
+	}
+
+	&__button {
+		padding: 8px;
+
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 1.5rem;
+		color: $darkGrey;
+		border-radius: 5px;
+	}
+		&__button:hover {
+			background-color: $meat;
+		}
 }
 
-label {
-	display: block;
-}
-
-input {
-	margin: 0 30px;
-	padding: 12px;
-	min-width: 500px;
-}

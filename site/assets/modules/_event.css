@@ -1,12 +1,35 @@
 .event {
 
-	&__toggle {
+	margin: 6px;
+	padding: 6px;
+
+	border-bottom: 2px solid $meat; 
+
+	@media (min-width: 800px) {
+		margin: 50px 15px 0 130px;
+		padding: 12px;
+
+
+	}
+
+	/*&__toggle {
 		height: 12px;
-		transition: rotate 3s;
+		transition: transform .3s;
 
 		&--open {
+			transition: transform .3s;
 			transform: rotate(90deg);
 		}	
+	}*/
+
+	&__header {
+		max-width: 900px;
+
+
+	}
+
+	&__content {
+		max-width: 900px;
 	}
 
 	&__copy {
@@ -14,20 +37,64 @@
 	}
 
 	&__name {
-		
+		margin-left: 25px;
+
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 1.3rem;
 	}
 
 	&__date {
-		
+		display: block;
+		margin-left: 45px;
+
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		font-style: italic;
+		font-size: 1.1rem;
+
+		@media (min-width: 800px) {
+			display: inline;
+		}
 	}
 
 	&__blurb {
-
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 100;
+		font-size: 1.8rem;
 	}
 
 	&__description {
 
 	}
+
+	&__location {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 1.3rem;
+	}
 } 
+
+.toggle--open {
+	height: 18px;
+	transition: transform .3s;
+	transform: rotate(90deg);
+}
+
+.toggle--closed {
+	height: 18px;
+	transition: transform .3s;
+	transform: rotate(0deg);
+}
+
+.box--open {
+	display: block;
+}
+
+.box--closed {
+		display: none;
+	}
+
+
 
 

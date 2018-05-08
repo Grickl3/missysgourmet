@@ -40,4 +40,12 @@
 		width: 100%;
 	}
 
+	&__space {
+		height: 50px;
+	}
+
+	&__space--large {
+		height: 400px;
+	}
+
 }

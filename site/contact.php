@@ -64,7 +64,12 @@ if($_POST["submit"]) {
 	    </form>
 
     </div><!-- END CONTACT FORM -->
-
+    <div class="wrapper__space"></div>
+    <div class="footer">
+		<span class="footer__text footer__text--big">parting words<br>maybe social media links</span>
+		
+		<span class="sqglz footer__text"><a href="http://sqglz.com/" target="_blank">&#169; SQGLZ 2018</a></span>
+	</div>
 <script src="scripts/vanilla.js" type="text/javascript">
 </script>
 

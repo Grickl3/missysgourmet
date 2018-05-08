@@ -1,0 +1,40 @@
+.bouncer-governed {
+	z-index: 0;
+	/*position: absolute;
+	top: 0;
+	height: 1080px;
+	width: 100%;
+	/*padding: 200px;*/
+	/*background: url(cakes.jpg) no-repeat;*/
+
+
+	&--blurred {
+		filter: blur(10px);
+	}
+}
+
+.bouncer {
+
+	&__form-box {
+		z-index: 2;
+		position: fixed;
+		top: 200px;
+		margin: 150px 200px;
+
+		/*background-color: grey;*/
+	}
+
+	&__form-box--hidden {
+		display: none;
+	}
+}
+
+label {
+	display: block;
+}
+
+input {
+	margin: 0 30px;
+	padding: 12px;
+	min-width: 500px;
+}

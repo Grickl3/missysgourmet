@@ -1,15 +1,17 @@
 .footer {
-	position: relative;
-	bottom: 0;
+	/*position: absolute;*/
+	/*bottom: 0;*/
+	margin-bottom: -10px;
 	padding: 45px 0;
 	height: 100px;
+	width: 100%;
 
 	background-color: $darkGrey;
 
 	text-align: center;
 
 	border-top: 4px solid $meat;
-	border-bottom: 1px solid $darkGrey;
+	/*border-bottom: 1px solid $darkGrey;*/
 
 	&__text {
 		font-family: 'Montserrat', sans-serif;

@@ -16,6 +16,7 @@
 	&__inner--medium {
 		position: relative;
 		margin: 10px; 
+		padding-right: 25px;
 		max-width: 80%;
 
 		@media (min-width: 800px) {

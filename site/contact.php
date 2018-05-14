@@ -31,7 +31,7 @@ if($_POST["submit"]) {
 	
 </head>
 <body>
-	<nav class="navigation navigation--closed" id="nav"> 
+	<nav class="navigation navigation--absolute navigation--closed" id="nav"> 
 		<div class="hamburger" id="hamburger">
 			<div class="hamburger--top top"></div>
 			<div class="hamburger--middle middle"></div>
@@ -45,7 +45,7 @@ if($_POST["submit"]) {
 			</ul>
 		</div><!-- NAVIGATION CONTENT -->
 	</nav>
-	
+	<div class="wrapper__space--medium"></div>
 	<div class="contact-form wrapper">
 		<h1 class="wrapper__inner--medium">Contact Us.</h1>
 		<p class="wrapper__inner--medium">Interested in having Missy cater your next event or in attending one of Missy's pop-up events? Drop us a line. We'll make it happen.</p>

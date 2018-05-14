@@ -2,7 +2,14 @@
 
 .navigation {
 
-	position: fixed;
+	&--fixed {
+		position: fixed;
+	}
+
+	&--absolute {
+		position: absolute;
+	}
+	
 	top: 0;
 	width: 100%;
 	min-height: 30px;

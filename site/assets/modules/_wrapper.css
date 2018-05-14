@@ -45,8 +45,22 @@
 		height: 50px;
 	}
 
+	&__space--medium {
+
+		height: 90px;
+
+		@media (min-width: 800px) {
+			height: 200px;
+		}
+	}
+
 	&__space--large {
-		height: 400px;
+
+		height: 180px;
+		
+		@media (min-width: 800px) {
+			height: 400px;
+		}
 	}
 
 }

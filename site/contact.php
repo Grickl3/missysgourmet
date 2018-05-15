@@ -60,7 +60,7 @@ if($_POST["submit"]) {
 	        <label class="contact-form__body">Message:</label>
 	        <textarea class="contact-form__input" rows="5" cols="20" name="message"></textarea>
 
-	        <input class="contact-form__button" id="contact-submit" type="submit" name="submit">
+	        <input class="contact-form__button" id="contact-submit" type="submit" name="SUBMIT">
 	    </form>
 
     </div><!-- END CONTACT FORM -->

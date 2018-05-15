@@ -472,6 +472,7 @@ p {
 	}
 
 .navigation--closed {
+		z-index: 1;
 		height: 60px;
 		transition: height 1s;
 		transition: background-color .3s ease-out;
@@ -479,6 +480,7 @@ p {
 	}
 
 .navigation--open {
+		z-index: 3;
 		height: 225px;
 		transition: height 1s;
 		transition: background-color .3s ease-out;
@@ -1075,7 +1077,7 @@ p {
 			background-color: #a83d19;
 		}
 
-                                               
+                                                 
     
                 
                 

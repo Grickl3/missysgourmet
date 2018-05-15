@@ -1,8 +1,13 @@
 .gallery {
 
-	/*border: 10px solid pink;*/
+	@media (min-width: 800px) {
+		display: none;
+	}
 
-	&__picture {
-		width: 100%;
+	@media (max-width: 800px) {
+
+		&__picture {
+			width: 100%;
+		}
 	}
 }

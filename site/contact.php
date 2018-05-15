@@ -14,7 +14,7 @@ if($_POST["submit"]) {
 }
 
 ?><!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Contact</title>
 	<meta charset="utf-8">

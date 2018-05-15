@@ -37,9 +37,8 @@
 			max-width: 700px;
 		}
 	}
-}
 
-&__button {
+	&__button {
 		padding: 8px;
 
 		font-family: 'Montserrat', sans-serif;
@@ -51,4 +50,7 @@
 		&__button:hover {
 			background-color: $meat;
 		}
+}
+
+
 

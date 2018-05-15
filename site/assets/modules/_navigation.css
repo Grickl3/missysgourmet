@@ -111,9 +111,14 @@
 	a {
 		text-decoration: none;
 		font-family: 'Montserrat', sans-serif;
+		transition: color .3s;
 		color: $meat;
-		/*color: red;*/
 	}
+
+	a:hover {
+		transition: color .3s;
+		color: #fff;
+	} 
 }
 
 

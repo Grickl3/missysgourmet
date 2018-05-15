@@ -24,13 +24,13 @@
 	&__input {
 		display: block;
 		margin: 10px;
-		padding: 3px;
+		padding: 10px;
 		max-width: 90%;
 
 		color: $darkGrey;;
 		font-size: 1.1em;
 		font-family: 'Montserrat', sans-serif;
-		font-weight: 300;
+		font-weight: 500;
 
 		@media (min-width: 800px) {
 			padding: 20px;
@@ -39,10 +39,16 @@
 	}
 }
 
-#contact-submit {
-	margin: 16px;
-	border-radius: 5px;
-	height: 48px;
-	font-size: 1.4em;
-}
+&__button {
+		padding: 8px;
+
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 1.5rem;
+		color: $darkGrey;
+		border-radius: 5px;
+	}
+		&__button:hover {
+			background-color: $meat;
+		}
 

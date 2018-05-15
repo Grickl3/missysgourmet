@@ -973,7 +973,7 @@ p {
 	}
 		}
 
-&__button {
+.contact-form__button {
 		padding: 8px;
 
 		font-family: 'Montserrat', sans-serif;
@@ -983,7 +983,7 @@ p {
 		border-radius: 5px;
 	}
 
-&__button:hover {
+.contact-form__button:hover {
 			background-color: #a83d19;
 		}
 
@@ -1075,7 +1075,7 @@ p {
 			background-color: #a83d19;
 		}
 
-                                              
+                                               
     
                 
                 

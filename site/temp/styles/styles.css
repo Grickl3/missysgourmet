@@ -1126,11 +1126,19 @@ p {
 		}
 	}
 
-.galleria { 
+.galleria {
+	
 	width: 100%; 
 	min-height: 900px; 
-	background: #000 
+	background: #000; 
 }
+
+@media (max-width: 800px) {
+
+.galleria {
+		display: none 
+}
+	}
 
 #galleria-loader{height:1px!important}
 
@@ -1190,5 +1198,5 @@ p {
 
 .galleria-theme-classic.galleria-container.videoplay .galleria-counter,.galleria-theme-classic.galleria-container.videoplay .galleria-info{display:none!important}
 
-    
+     
 

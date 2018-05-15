@@ -1,4 +1,9 @@
 .galleria { 
+
+	@media (max-width: 800px) {
+		display: none;
+	}
+	
 	width: 100%; 
 	min-height: 900px; 
 	background: #000 

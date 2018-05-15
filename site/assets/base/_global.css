@@ -34,7 +34,8 @@ p {
 	color: #fff;
 
 	@media (min-width: 800px) {
-		font-size: 1.4rem;
+		font-size: 1.5rem;
 		line-height: 2rem;
+		font-weight: 100;
 	}
 }

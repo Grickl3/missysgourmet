@@ -49,16 +49,16 @@ if($_POST["submit"]) {
 	<div class="contact-form wrapper">
 		<h1 class="wrapper__inner--medium">Contact Us.</h1>
 		<p class="wrapper__inner--medium">Interested in having Missy cater your next event or in attending one of Missy's pop-up events? Drop us a line. We'll make it happen.</p>
-
+		<div class="wrapper__space"></div>
 	    <form class="contact-form__stack" method="post" action="contact.php">
 	        <label class="contact-form__body">Name:</label>
-	        <input name="sender">
+	        <input class="contact-form__input" name="sender">
 
 	        <label class="contact-form__body">Email address:</label>
-	        <input name="senderEmail">
+	        <input class="contact-form__input" name="senderEmail">
 
 	        <label class="contact-form__body">Message:</label>
-	        <textarea rows="5" cols="20" name="message"></textarea>
+	        <textarea class="contact-form__input" rows="5" cols="20" name="message"></textarea>
 
 	        <input id="contact-submit" type="submit" name="submit">
 	    </form>

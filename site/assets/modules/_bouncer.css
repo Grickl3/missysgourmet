@@ -11,7 +11,7 @@
 	&--blurred {
 		filter: blur(10px);
 	}
-}
+} 
 
 .bouncer {
 

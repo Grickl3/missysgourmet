@@ -1,0 +1,8 @@
+.gallery {
+
+	/*border: 10px solid pink;*/
+
+	&__picture {
+		width: 100%;
+	}
+}

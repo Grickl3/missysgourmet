@@ -66,7 +66,9 @@ if($_POST["submit"]) {
     </div><!-- END CONTACT FORM -->
     <div class="wrapper__space"></div>
     <div class="footer">
-		<span class="footer__text footer__text--big">parting words<br>maybe social media links</span>
+		<span class="footer__text footer__text--big">Follow Missy<br>on Instagram!</span>
+		<a href="https://www.instagram.com/" target="_blank"><img class="footer__instagram-icon" src="assets/img/instagram-logo.svg"></a>
+		<!-- Instagram icon By Bogdan Rosu -->
 		
 		<span class="sqglz footer__text"><a href="http://sqglz.com/" target="_blank">&#169; SQGLZ 2018</a></span>
 	</div>

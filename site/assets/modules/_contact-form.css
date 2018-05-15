@@ -39,6 +39,7 @@
 	}
 
 	&__button {
+		margin: 20px;
 		padding: 8px;
 
 		font-family: 'Montserrat', sans-serif;

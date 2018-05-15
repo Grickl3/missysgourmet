@@ -1,9 +1,10 @@
 .footer {
-	/*position: absolute;*/
-	/*bottom: 0;*/
-	margin-bottom: -10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 	padding: 45px 0;
-	height: 100px;
+	min-height: 100px;
 	width: 100%;
 
 	background-color: $darkGrey;
@@ -27,13 +28,38 @@
 		font-weight: 100;
 		font-size: 2rem;
 	}
+
+	&__instagram-icon {
+		position: absolute;
+		transform: translateX(-50%);
+		transition: opacity .3s;
+		opacity: 1;
+		margin-top: 30px;
+		height: 50px;
+	}
+		&__instagram-icon:hover {
+			opacity: 0;
+		}
+
+	&__instagram-icon--white {
+		transition: opacity .3s;
+		opacity: 0;
+	}
+		&__instagram-icon--white:hover {
+			opacity: 1;
+		}
 }
 
 
 .sqglz {
 	display: block;
-	padding: 60px 0;
+	width: 100%;
+	padding: 150px 0 30px 0;
 	
+	@media (min-width: 800px) {
+		padding: 200px 0 75px 0;
+	}
+
 	font-weight: 500;
 	font-size: .8rem;
 

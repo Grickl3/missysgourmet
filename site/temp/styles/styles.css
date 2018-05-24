@@ -830,6 +830,7 @@ p {
 	}
 
 .toggle--open {
+	z-index: 8;
 	height: 18px;
 	transition: -webkit-transform .3s;
 	transition: transform .3s;
@@ -839,6 +840,7 @@ p {
 }
 
 .toggle--closed {
+	z-index: 8;
 	height: 18px;
 	transition: -webkit-transform .3s;
 	transition: transform .3s;
@@ -1131,7 +1133,9 @@ p {
 		}
 	}
 
-.galleria {
+.galleria { 
+
+	z-index: 1;
 	
 	width: 100%; 
 	min-height: 900px; 
@@ -1203,5 +1207,5 @@ p {
 
 .galleria-theme-classic.galleria-container.videoplay .galleria-counter,.galleria-theme-classic.galleria-container.videoplay .galleria-info{display:none!important}
 
-          
+            
 

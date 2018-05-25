@@ -4,6 +4,7 @@
 
 var whiteList = ["melissa martinez","deacon rodda","2chefmelissa@gmail.com","1uppity1@gmail.com","betsy lamberson","mel", "kelley kavanaugh", "sara king"];
 var $bouncer = $("#bouncer");
+var $bouncerCopy = $("#bouncer-copy");
 var $nameSubmission;
 var $bouncerGoverned = $("#bouncer-governed");
 var $bouncerForm = $(".bouncer__form-box");
@@ -21,6 +22,8 @@ $bouncer.on("submit", function(e) {
 			$bouncerGoverned.removeClass("bouncer-governed--blurred");
 			$bouncerForm.addClass("bouncer__form-box--hidden");
 			return;
-		} 
+		} else {
+			$bouncerCopy.text("Sorry, you aren't on the list.");
+		}
 	}
 });

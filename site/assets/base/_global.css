@@ -12,9 +12,10 @@ h1 {
 
 	margin: 15px 0;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
-	font-size: 2.4rem;
+	font-weight: 100;
+	font-size: 2.6rem;
 	color: #fff;
+	text-align: center;
 
 
 	@media (min-width: 800px) {
@@ -25,22 +26,23 @@ h1 {
 }
 
 h3 {
-	margin: 15px 0;
+	margin: 15px 5px;
+	/*max-width: 95%;*/
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 300;
-	font-size: 3.4rem;
+	font-weight: 500;
+	font-size: 1.4rem;
 	color: #fff;
+	text-align: center;
 
 
 	@media (min-width: 800px) {
-		font-weight: 100;
+		font-weight: 500;
 		font-size: 2.4rem;
 		color: #fff;
 	}
 }
 
 p {
-	/*fon t-family: 'Crimson Text', serif;*/
 	font-family: 'IBM Plex Serif', serif;
 	font-size: 1.2rem;
 	font-weight: 300;
@@ -54,3 +56,9 @@ p {
 		font-weight: 100;
 	}
 }
+
+.center {
+	text-align: center;
+}
+
+

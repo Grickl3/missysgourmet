@@ -45,6 +45,15 @@
 		height: 50px;
 	}
 
+	&__space--small {
+
+		height: 20px;
+
+		@media (min-width: 800px) {
+			height: 40px;
+		}
+	} 
+
 	&__space--medium {
 
 		height: 90px;

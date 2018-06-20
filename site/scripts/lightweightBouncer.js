@@ -2,7 +2,24 @@
 
 
 
-var whiteList = ["melissa martinez","deacon rodda","2chefmelissa@gmail.com","1uppity1@gmail.com","betsy lamberson","mel", "kelley kavanaugh", "sara king", "brendan keely", "julie keely"];
+var whiteList = [
+	"mel",
+	"melissa martinez",
+	"deacon rodda",
+	"betsy lamberson",
+	"kelley kavanaugh",
+	"sara king",
+	"char campbell",
+	"dave campbell",
+	"michael rotan",
+	"sara morely",
+	"erik applegate",
+	"tim pool",
+	"dana landry",
+	"jim harvey",
+	"brendan keely",
+	"julie keely"
+];
 var $bouncer = $("#bouncer");
 var $bouncerCopy = $("#bouncer-copy");
 var $nameSubmission;

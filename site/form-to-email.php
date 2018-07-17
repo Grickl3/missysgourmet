@@ -24,7 +24,7 @@ if(IsInjected($visitor_email))
 $email_from = 'deacon@sqglz.com';//<== update the email address
 $email_subject = "New Form Submission";
 $email_body = "You have received a new message from the user $name.\n".
-    "Here is the message:\n $message".;
+    "Here is the message:\n $message".
     
 $to = "deacon@sqglz.com";//<== update the email address
 $headers = "From: $email_from \r\n";

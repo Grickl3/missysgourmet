@@ -1,19 +1,44 @@
 <?php
+  $name = $_POST['sender'];
+  $visitor_email = $_POST['senderEmail'];
+  $message = $_POST['message'];
+?>
 
-if($_POST["submit"]) {
-    $recipient="deacon@sqglz.com";
-    $subject="message from site";
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["senderEmail"];
-    $message=$_POST["message"];
+<?php
+  $email_from = 'deacon@sqglz.com';
+ 
+  $email_subject = "New Form submission";
+ 
+  $email_body = "You have received a new message from the user $name.\n". "Here is the message:\n $message".
+?>
 
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+<?php
+ 
+  $to = "deacon@sqglz.com";
+ 
+  $headers = "From: $email_from \r\n";
+ 
+  $headers .= "Reply-To: $visitor_email \r\n";
+ 
+  mail($to,$email_subject,$email_body,$headers);
+ 
+?>
 
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
 
-}
+<!-- round one <?php
+	// if($_POST["submit"]) {
+	    // $recipient="deacon@sqglz.com";
+	    // $subject="message from site";
+	    // $sender=$_POST["sender"];
+	    // $senderEmail=$_POST["senderEmail"];
+	    // $message=$_POST["message"];
 
-?><!DOCTYPE html>
+	    // $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+	    // mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+	}
+?> -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Contact</title>
@@ -50,19 +75,18 @@ if($_POST["submit"]) {
 		<h1 class="wrapper__inner--medium">Contact Us.</h1>
 		<p class="wrapper__inner--medium">Interested in having Missy cater your next event or in attending one of Missy's pop-up events? Drop us a line. We'll make it happen.</p>
 		<div class="wrapper__space"></div>
-	    <form class="contact-form__stack" method="post" action="contact.php">
+	    <form class="contact-form__stack" method="post" name="contact-form" action="contact.php">
 	        <label class="contact-form__body">Name:</label>
-	        <input class="contact-form__input" name="sender">
+	        <input class="contact-form__input" type="text" name="sender">
 
 	        <label class="contact-form__body">Email address:</label>
-	        <input class="contact-form__input" name="senderEmail">
+	        <input class="contact-form__input" type="text" name="senderEmail">
 
 	        <label class="contact-form__body">Message:</label>
 	        <textarea class="contact-form__input" rows="5" cols="20" name="message"></textarea>
 
 	        <button class="contact-form__button" id="contact-submit" type="submit">SUBMIT</button>
 	    </form>
-
     </div><!-- END CONTACT FORM -->
     <div class="wrapper__space"></div>
     <div class="footer">

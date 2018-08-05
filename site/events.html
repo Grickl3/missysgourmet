@@ -20,8 +20,17 @@
 	<link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
 	<!-- <meta name="pinterest" content="nopin" /> -->
 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,500,500i,900,900i" rel="stylesheet">
+	<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#a83d19">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#000000">
+	<!-- Favicon -->
 
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,500,500i,900,900i" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:100,100i,300,300i,500,500i,700,700i" rel="stylesheet"> 
 	<!-- MAIL CHIMP -->
@@ -47,13 +56,39 @@
 		</div><!-- NAVIGATION CONTENT -->
 	</nav>
 
-	<div id="bouncer-governed" class="bouncer-governed bouncer-governed--blurred">
+	<div id="bouncer-governed" class="bouncer-governed"><!-- bouncer-governed--blurred -->
 		<div class="wrapper">
 			<h1 class="wrapper__inner--medium">Exclusive Events</h1>
 			
 			<p class="wrapper__inner--medium">Missy puts her heart and soul into everything she cooks, applying her life experiences and personality. Her understanding of flavor balance as well as her uniquely creative energy play a vital role in the creation of her menus.</p>
 		</div><!-- INTRO -->
 
+		<div class="event">
+			<div class="event--header">
+				<img class="toggle toggle--closed" src="assets/img/toggle.png">
+				<span class="event__name event__copy">Tacos Beer and Friends</span>
+				<span class="event__date event__copy">August 31, 2018</span>
+			</div><!-- HEADER -->
+			<div class="event__content box--closed">
+				<h3 class="event__blurb event__copy">Gourmet Tacos</h3>
+				<p class="event__description event__copy">-Flank Steak - <br>
+				 Spiced Corn/Black Beans, Cotija Cheese and <br>
+				 Cabbage Slaw. Served with Pineapple Pico <br>
+				 and Crema <br>
+				 <br>
+				-Chicken- <br>
+				 Spiced Corn/Black Beans, Cotija Cheese and <br>
+				 Cabbage Slaw Served with Salsa Verde <br>
+				 and Crema <br>
+				 <br>
+				-Meat Free-  <br> 
+				 Roasted Cauliflower, Spiced Corn/Black Beans, Cotija Cheese <br>
+				 and Cabbage Slaw. Served with Mango Salsa <br>
+				 and Crema <br>
+				</p>
+				<span class="event__location event__copy">6:30-9:30pm &#8211; Denver Bicycle Cafe, 17th ave. &#38; Lafayette Denver, CO</em></span>
+			</div><!-- CONTENT -->
+		</div><!-- EVENT -->
 		<div class="event">
 			<div class="event--header">
 				<img class="toggle toggle--closed" src="assets/img/toggle.png">
@@ -153,13 +188,13 @@
 		</div><!-- EVENT -->
 	</div><!-- BOUNCER GOVERNED -->
 
-	<div class="bouncer__form-box">
+	<!-- <div class="bouncer__form-box">
 		<form id="bouncer">
 			<h3 id="bouncer-copy">State Your Name</h3>
 			<label class="bouncer__label"><input class="bouncer__input" type="text"></label>
 			<button class="bouncer__button" type="submit">ENTER</button>
 		</form>
-	</div><!-- FORM BOX -->
+	</div> --><!-- FORM BOX -->
 
 	<div class="wrapper__space--large"></div>
 
@@ -176,13 +211,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="scripts/vanilla.js" type="text/javascript"></script>
 	<script src="scripts/arbBoxToggling.js" type="text/javascript"></script>
-	<script src="scripts/lightweightBouncer.js" type="text/javascript"></script>
+	<!-- <script src="scripts/lightweightBouncer.js" type="text/javascript"></script> -->
 
 
 <script type="text/javascript">
 	hamburger.addEventListener("click", toggleNav);
 
-	buildSomeBoxes(4);
+	buildSomeBoxes(4); 
 
 	// BOUNCER
 		// var whiteList = ["Melissa Martinez","Deacon Rodda","2chefmelissa@gmail.com","1uppity1@gmail.com","Betsy Lamberson","Mel", "Kelley Kavanaugh", "Sara King"];

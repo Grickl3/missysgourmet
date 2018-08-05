@@ -1,4 +1,4 @@
-
+ 
 
 
 
@@ -20,6 +20,7 @@ var whiteList = [
 	"brendan keely",
 	"julie keely"
 ];
+
 var $bouncer = $("#bouncer");
 var $bouncerCopy = $("#bouncer-copy");
 var $nameSubmission;

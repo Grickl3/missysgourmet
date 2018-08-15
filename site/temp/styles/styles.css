@@ -1235,11 +1235,15 @@ p {
 
 .static-chimp__close-icon {
  		position: absolute;
- 		top: 10px;
+ 		top: -25px;
  		right: 10px;
 
  		height: 18px;
  		width: 18px;
+
+ 		padding: 5px;
+ 		background-color: #ffffff;
+ 		border-radius: 3px;
  	}
 
 .static-chimp__backdrop {
@@ -1258,7 +1262,7 @@ p {
 .static-chimp__modal {
  		position: fixed;
  		z-index: 6;
- 		top: 20%;
+ 		top: 15%;
  		-webkit-transform: translateX(15%);
  		        transform: translateX(15%);
  		width: 80%;
@@ -1332,5 +1336,5 @@ p {
 .galleria-theme-classic.galleria-container.videoplay .galleria-counter,.galleria-theme-classic.galleria-container.videoplay .galleria-info{display:none!important}
 
             
-                                             
+                                                 
     

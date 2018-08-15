@@ -1,0 +1,77 @@
+ 
+
+
+ .static-chimp {
+ 	position: fixed;
+ 	top: 85%;
+ 	right: 15px;
+
+ 	transition: background-color .6s ease;
+ 	background-color: black;
+ 	width: 45px;
+ 	height: 45px; 
+ 	border-radius: 5px;
+ 	border: 1px solid #474343;
+
+ 	@media (min-width: 800px) {
+ 		/*top: 75%;*/
+
+ 		width: 70px;
+ 		height: 70px;
+ 		border-radius: 9px;
+ 	}
+
+ 	&__invite-icon {
+ 		display: block;
+ 		margin: auto;
+ 		margin-top: 2px;
+ 		height: 35px;
+ 		width: 35px;
+ 		
+
+ 		@media (min-width: 800px) {
+ 			margin-top: 6px;
+ 			height: 55px;
+ 			width: 55px;
+ 		}
+ 	}
+
+ 	&__close-icon {
+ 		position: absolute;
+ 		top: 10px;
+ 		right: 10px;
+
+ 		height: 18px;
+ 		width: 18px;
+ 	}
+
+ 	&__backdrop {
+ 		position: fixed;
+ 		z-index: 5;
+ 		height: 100%;
+ 		width: 100%;
+ 		background-color: #f5f5f5;
+ 		opacity: 40%;
+ 	}
+
+ 	&__modal--hidden {
+ 		display: none;
+ 	}
+
+ 	&__modal {
+ 		position: fixed;
+ 		z-index: 6;
+ 		top: 20%;
+ 		transform: translateX(15%);
+ 		width: 80%;
+ 		min-height: 400px;
+
+ 		background-color: #17161e;
+ 		border-radius: 13px;
+ 	}
+ }
+
+ .static-chimp:hover {
+ 	transition: background-color .6s ease;
+ 	background-color: #d8c3ba;
+ }

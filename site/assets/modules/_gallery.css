@@ -1,7 +1,16 @@
 .gallery {
 
+
 	@media (min-width: 800px) {
-		display: none;
+		/*display: none;*/
+		&__picture {
+			display: block;
+			margin: auto;
+			margin-top: 12px;
+			margin-bottom: 12px;
+			width: 85%;
+			border-radius: 17px;
+		}
 	}
 
 	@media (max-width: 800px) {

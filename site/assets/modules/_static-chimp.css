@@ -5,6 +5,7 @@
  	position: fixed;
  	top: 85%;
  	right: 15px;
+ 	z-index: 12;
 
  	transition: background-color .6s ease;
  	background-color: black;
@@ -27,7 +28,6 @@
  		margin-top: 2px;
  		height: 35px;
  		width: 35px;
- 		
 
  		@media (min-width: 800px) {
  			margin-top: 6px;

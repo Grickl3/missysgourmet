@@ -32,7 +32,7 @@
 	}
 
 	&--dark {
-		background-color: rgba($darkGrey, .85);
+		background-color: rgba($darkGrey, 1);
 		/*border: 1px solid $meat;*/
 
 	}

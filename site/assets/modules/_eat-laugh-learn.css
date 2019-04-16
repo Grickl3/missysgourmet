@@ -1,0 +1,18 @@
+
+
+
+.eat-laugh-learn {
+	z-index: 5;
+
+	&__box {
+		position: relative;
+		overflow: hidden;
+	}
+
+	&__berries {
+		position: absolute;
+		max-height: 36rem;
+		bottom: -5rem;
+		opacity: .2;
+	}
+}

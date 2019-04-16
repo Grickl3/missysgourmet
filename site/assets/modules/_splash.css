@@ -37,11 +37,25 @@
 		@media (min-width: 900px) {
 			position: fixed;
 			top: -200px;
-			right: 40px;
-			z-index: -1;
+			right: -50px;
 
 			max-height: 1800px;
 			opacity: 1;
 		}
+	}
+
+	&__tertiary-img {
+
+		position: absolute;
+		right: -5rem;
+		z-index: -2;
+
+		max-width: 600px;
+
+		@media (min-width: 900px) {
+			top: 24rem;
+			max-width: 900px;
+		}
+
 	}
 }

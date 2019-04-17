@@ -2,6 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	bottom: 0;
 
 	padding: 45px 0;
 	min-height: 100px;
@@ -62,8 +63,14 @@
 
 	font-weight: 500;
 	font-size: .8rem;
+	letter-spacing: .5rem;
 
 	background-color: $darkGrey;
+}
+
+
+.sqglz-link a:hover {
+	color: white;
 }
 
 	/*.sqglz:visited {

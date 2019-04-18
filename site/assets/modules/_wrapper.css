@@ -15,13 +15,18 @@
 
 	&__inner--medium {
 		position: relative;
+		display: block;
 		margin: 10px; 
 		padding-right: 25px;
 		max-width: 80%;
 
 		@media (min-width: 800px) {
-			margin: 10px 30px 10px 100px;
+			/*margin: 10px 30px 10px 100px;*/
+			margin-top: 10px;
+			margin-left: 50%;
+			transform: translateX(-50%);
 			/* margin-left: 100px; */
+			min-width: 65%;
 			max-width: 1000px;
 			
 

@@ -508,7 +508,7 @@ a:hover {
 	top: 0;
 	width: 100%;
 	min-height: 30px;
-	z-index: 3;
+	z-index: 6;
 	padding: 0px 0 12px 0; 
 }
 
@@ -521,7 +521,7 @@ a:hover {
 	}
 
 .navigation--closed {
-		z-index: 1;
+		z-index: 6;
 		height: 60px;
 		transition: height 1s;
 		transition: background-color .3s ease-out;
@@ -737,6 +737,7 @@ a:hover {
 
 .wrapper__inner--medium {
 		position: relative;
+		display: block;
 		margin: 10px; 
 		padding-right: 25px;
 		max-width: 80%;
@@ -746,8 +747,13 @@ a:hover {
 @media (min-width: 800px) {
 
 .wrapper__inner--medium {
-			margin: 10px 30px 10px 100px;
+			/*margin: 10px 30px 10px 100px;*/
+			margin-top: 10px;
+			margin-left: 50%;
+			-webkit-transform: translateX(-50%);
+			        transform: translateX(-50%);
 			/* margin-left: 100px; */
+			min-width: 65%;
 			max-width: 1000px
 			
 
@@ -919,14 +925,17 @@ a:hover {
 	}
 
 .footer {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	bottom: 0;
 
+	margin-top: 120px;
 	padding: 45px 0;
-	min-height: 100px;
+	min-height: 300px;
 	width: 100%;
+	overflow: hidden;
 
 	background-color: #17161e;
 
@@ -936,6 +945,13 @@ a:hover {
 }
 
 /*border-bottom: 1px solid $darkGrey;*/
+
+@media (min-width: 800px) {
+
+.footer {
+		min-height: 300px
+}
+	}
 
 .footer__text {
 		font-family: 'Montserrat', sans-serif;
@@ -948,7 +964,7 @@ a:hover {
 		}
 
 .footer__text--big {
-		font-weight: 100;
+		font-weight: 500;
 		font-size: 2rem;
 	}
 
@@ -960,6 +976,8 @@ a:hover {
 		opacity: 1;
 		margin-top: 30px;
 		height: 50px;
+		bottom: 40%;
+		z-index: 1;
 	}
 
 .footer__instagram-icon:hover {
@@ -975,24 +993,37 @@ a:hover {
 			opacity: 1;
 		}
 
+.footer__cocoa {
+		position: absolute;
+		max-height: 36rem;
+		max-width: 1500px;
+		left: -40%;
+		bottom: -150px;
+		opacity: .4;
+		z-index: 0;
+	}
+
 .sqglz {
 	display: block;
+	position: absolute;
 	width: 100%;
-	padding: 150px 0 30px 0;
+	bottom: 15%;
 
 	font-weight: 500;
 	font-size: .8rem;
 	letter-spacing: .5rem;
 
-	background-color: #17161e;
+	/*background-color: $darkGrey;*/
 }
 
 @media (min-width: 800px) {
 
 .sqglz {
-		padding: 200px 0 75px 0;
+		bottom: 15%;
 }
 	}
+
+.sqglz-link { z-index: 2; }
 
 .sqglz-link a:hover {
 	color: white;
@@ -1349,6 +1380,11 @@ a:hover {
 
 .eat-laugh-learn {
 	z-index: 5;
+
+	border-top: 2px solid rgba(255,255,255,.5);
+	border-bottom: 2px solid rgba(255,255,255,.5);
+	box-shadow: 0px 5px 5px rgba(0,0,0,.3),
+  			0px -5px 5px rgba(0,0,0,.3);
 }
 
 .eat-laugh-learn__box {
@@ -1363,4 +1399,4 @@ a:hover {
 		opacity: .2;
 	}
 
-      
+     

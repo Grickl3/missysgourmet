@@ -41,13 +41,16 @@
 	height: 78px;
 	z-index: 3;
 
-	background-color: lightgrey;
+	/*background-color: lightgrey;*/
 	border-radius: 7px;
 }
 
 .gallery__arrow:hover {
-	background-color: slategrey;
+	/*background-color: slategrey;*/
 }
+
+.gallery__left { transform: rotate(180deg); }
+.gallery__right {}
 
 .gallery__viewport {
 	display: flex;

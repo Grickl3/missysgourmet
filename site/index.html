@@ -37,8 +37,6 @@
 
   			gtag('config', 'UA-86920331-2');
 		</script>
-
-
 </head>
 <body>
 	<nav class="navigation navigation--fixed navigation--closed" id="nav"> 
@@ -75,13 +73,23 @@
 		<p class="wrapper__inner--medium center">Enjoy</p>
 	</div><!-- SERVICE OFFERING -->  
 
-	<div class="gallery">
-		<img class="gallery__picture" src="assets/img/bennyish800x533.jpg" alt="Eggs Benedict like Delicious Thing" nopin="nopin">
-		<img class="gallery__picture" src="assets/img/scallop_with_lemon_butter_sauce800x533.jpg" alt="Scallop with Lemon Butter Sauce" nopin="nopin">
-		<img class="gallery__picture" src="assets/img/braised_beff_with_gorgonzola_polenta800x533.jpg" alt="Braised Beef with Gorgonzola" nopin="nopin">
-		<img class="gallery__picture" src="assets/img/porkchops_and_applesauce800x533.jpg" alt="Porkchops and Applesauce" nopin="nopin">
-		<img class="gallery__picture" src="assets/img/stew800x533.jpg" alt="Stew" nopin="nopin">
-	</div><!-- GALLERY --> 
+	<div class="gallery__content">
+		<div id="left-arrow" class="gallery__arrow">
+		</div><!-- LEFT ARROW -->
+		<div id="viewport" class="gallery__viewport">
+			<img id="active-image" src="assets/img/bennyish800x533.jpg">
+		</div><!-- GALLERY VIEWPORT -->
+		<div id="right-arrow" class="gallery__arrow">
+		</div><!-- RIGHT ARROW -->
+	</div>
+
+	<div class="gallery__storage">
+		<img id="benie" class="gallery__picture" src="assets/img/bennyish800x533.jpg" alt="Eggs Benedict like Delicious Thing" nopin="nopin">
+		<img id="scallop" class="gallery__picture" src="assets/img/scallop_with_lemon_butter_sauce800x533.jpg" alt="Scallop with Lemon Butter Sauce" nopin="nopin">
+		<img id="beef" class="gallery__picture" src="assets/img/braised_beff_with_gorgonzola_polenta800x533.jpg" alt="Braised Beef with Gorgonzola" nopin="nopin">
+		<img id="porkchop" class="gallery__picture" src="assets/img/porkchops_and_applesauce800x533.jpg" alt="Porkchops and Applesauce" nopin="nopin">
+		<img id="stew" class="gallery__picture" src="assets/img/stew800x533.jpg" alt="Stew" nopin="nopin">
+	</div><!-- GALLERY STORAGE --> 
 
 
 	<div class="wrapper wrapper__medium wrapper--dark wrapper--full-width eat-laugh-learn">	
@@ -166,7 +174,55 @@
 <script type="text/javascript">   
 	hamburger.addEventListener("click", toggleNav);
 	
-	
+	// GALLERY 
+
+		var viewport = document.getElementById("viewport");
+		var activeImage = document.getElementById("active-image");
+		var leftArrow = document.getElementById("left-arrow");
+		var rightArrow = document.getElementById("right-arrow");
+		var position = 0;
+
+		// IMAGES
+			var benie = document.getElementById("benie");
+			var scallop = document.getElementById("scallop");
+			var beef = document.getElementById("beef");
+			var porkchop = document.getElementById("porkchop");
+			var stew = document.getElementById("stew");
+
+			var images = [benie, scallop, beef, porkchop, stew];
+
+		function cycleLeft() {
+			position --;
+			if(position < 0) { position += images.length};
+			console.log(position);
+			// console.log(images[position]);
+			var nextImage = images[position];
+			console.log(nextImage);
+			viewport.innerHTML = '';
+			viewport.appendChild(nextImage);
+		};
+
+		leftArrow.addEventListener("click", function() {
+			cycleLeft();
+		});
+
+		function cycleRight() {
+			position ++;
+			if(position === images.length) { position = 0};
+			console.log(position);
+			// console.log(images[position]);
+			var nextImage = images[position];
+			console.log(nextImage);
+			viewport.innerHTML = '';
+			viewport.appendChild(nextImage);
+		};
+
+		rightArrow.addEventListener("click", function() {
+			cycleRight();
+		});
+
+
+
 </script>
 
 </body>

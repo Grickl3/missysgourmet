@@ -7,6 +7,15 @@ body {
 	overflow-x: hidden;
 }
 
+@media (max-width: 600px) {}
+
+@media (min-width: 601px) and (max-width: 900px) {}
+
+@media (min-width: 901px) and (max-width: 1200px) {}
+
+@media (min-width: 1201px) and (max-width: 1800px) {}
+
+@media (min-width: 1800px) {}
 
 h1 {
 

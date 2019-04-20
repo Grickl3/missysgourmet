@@ -43,14 +43,64 @@
 
 	/*background-color: lightgrey;*/
 	border-radius: 7px;
+
+	@media (max-width: 600px) {
+		max-width: 10vw;
+	}
+
+	@media (min-width: 601px) and (max-width: 900px) {}
+
+	@media (min-width: 901px) and (max-width: 1200px) {}
+
+	@media (min-width: 1201px) and (max-width: 1800px) {}
+
+	@media (min-width: 1800px) {}
 }
 
 .gallery__arrow:hover {
-	/*background-color: slategrey;*/
+
 }
 
-.gallery__left { transform: rotate(180deg); }
-.gallery__right {}
+.gallery__arrow-img {
+	@media (max-width: 600px) {
+		max-width: 10vw;
+	}
+
+	@media (min-width: 601px) and (max-width: 900px) {}
+
+	@media (min-width: 901px) and (max-width: 1200px) {}
+
+	@media (min-width: 1201px) and (max-width: 1800px) {}
+
+	@media (min-width: 1800px) {}
+}
+
+.gallery__left { 
+	transform: rotate(180deg); 
+
+	@media (max-width: 600px) {
+		
+	}
+
+	@media (min-width: 601px) and (max-width: 900px) {}
+
+	@media (min-width: 901px) and (max-width: 1200px) {}
+
+	@media (min-width: 1201px) and (max-width: 1800px) {}
+
+	@media (min-width: 1800px) {}
+}
+.gallery__right {
+	@media (max-width: 600px) {}
+
+	@media (min-width: 601px) and (max-width: 900px) {}
+
+	@media (min-width: 901px) and (max-width: 1200px) {}
+
+	@media (min-width: 1201px) and (max-width: 1800px) {}
+
+	@media (min-width: 1800px) {}
+}
 
 .gallery__viewport {
 	display: flex;
@@ -62,8 +112,26 @@
 	height: 80vw;
 }
 
-.gallery__viewport img {
+/*.gallery__viewport img {
 	border-radius: 7px;
+}*/
+
+.gallery__picture {
+
+	@media (max-width: 600px) {
+		max-width: 80vw;
+	}
+
+	@media (min-width: 601px) and (max-width: 900px) {}
+
+	@media (min-width: 901px) and (max-width: 1200px) {
+		border-radius: 7px;
+	}
+
+	@media (min-width: 1201px) and (max-width: 1800px) {}
+
+	@media (min-width: 1800px) {}
+
 }
 
 .gallery__storage {

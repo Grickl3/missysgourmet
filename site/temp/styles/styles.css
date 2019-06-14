@@ -603,8 +603,15 @@ a:hover {
 		background-color: rgba(23,22,30, .80);
 	}
 
+@media (min-width: 800px) {
+
+.navigation--closed {
+			z-index: 6
+	}
+		}
+
 .navigation--open {
-		z-index: 3;
+		z-index: 6;
 		height: 280px;
 		transition: height 1s;
 		transition: background-color .3s ease-out;
@@ -1652,4 +1659,4 @@ a {
 		opacity: .2;
 	}
 
-           
+              

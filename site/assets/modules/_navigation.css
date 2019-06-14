@@ -22,10 +22,14 @@
 		transition: height 1s;
 		transition: background-color .3s ease-out;
 		background-color: rgba($darkGrey, .80);
+
+		@media (min-width: 800px) {
+			z-index: 6;
+		}
 	}
 
 	&--open {
-		z-index: 3;
+		z-index: 6;
 		height: 280px;
 		transition: height 1s;
 		transition: background-color .3s ease-out;

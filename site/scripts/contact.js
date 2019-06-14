@@ -12,21 +12,21 @@ $(document).ready(function () {
 		var statusElm = $('.status');
 		statusElm.empty();
 
-		if(email.length > 5 && email.includes('@') && email.includes('.')) {
+		if(email.length > 4 && email.includes('@') && email.includes('.')) {
 			// statusElm.append('<div>email is valid</div>');
 		} else {
 			event.preventDefault();
 			statusElm.append('<div>email is invalid</div>');
 		}
 
-		if(subject.length > 2) {
+		if(subject.length > -1) {
 			// statusElm.append('<div>subject is valid</div>');
 		} else {
 			event.preventDefault();
 			statusElm.append('<div>subject is invalid<br>min. 3 characters</div>');
 		}
 
-		if(message.length > 20) {
+		if(message.length > -1) {
 			// statusElm.append('<div>message is valid</div>');
 		} else {
 			event.preventDefault();

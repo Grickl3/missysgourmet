@@ -847,11 +847,30 @@ a:hover {
 @media (min-width: 800px) {}
 
 .wrapper__section-heading {
+		/*margin-left: 50%;*/
+		/*transform: translateX(-50%);*/
+		text-align: center;
+	}
+
+.wrapper__a__image {
+		position: relative;
+		display: block;
+		margin-top: 10px; 
+		margin-bottom: 10px;
 		margin-left: 50%;
 		-webkit-transform: translateX(-50%);
 		        transform: translateX(-50%);
-		text-align: left;
+		max-width: 80%;
+
+		border-radius: 13px;
 	}
+
+@media (min-width: 800px) {
+
+.wrapper__a__image {
+			min-width: 65%
+	}			
+		}
 
 .wrapper--full-width {
 		width: 100%;
@@ -1633,4 +1652,4 @@ a {
 		opacity: .2;
 	}
 
-     
+           

@@ -44,9 +44,25 @@
 	}
 
 	&__section-heading {
+		/*margin-left: 50%;*/
+		/*transform: translateX(-50%);*/
+		text-align: center;
+	}
+
+	&__a__image {
+		position: relative;
+		display: block;
+		margin-top: 10px; 
+		margin-bottom: 10px;
 		margin-left: 50%;
 		transform: translateX(-50%);
-		text-align: left;
+		max-width: 80%;
+
+		border-radius: 13px;
+
+		@media (min-width: 800px) {
+			min-width: 65%;			
+		}
 	}
 
 	&--full-width {

@@ -26,9 +26,7 @@
 			margin-left: 50%;
 			transform: translateX(-50%);
 			/* margin-left: 100px; */
-			min-width: 65%;
-			max-width: 1000px;
-			
+			min-width: 65%;			
 		}
 
 	}
@@ -36,7 +34,35 @@
 	&--dark {
 		background-color: rgba($darkGrey, 1);
 		/*border: 1px solid $meat;*/
+	}
 
+	&__intro {
+		text-align: center;
+		font-weight: 100;
+	
+		@media (min-width: 800px) {}
+	}
+
+	&__section-heading {
+		/*margin-left: 50%;*/
+		/*transform: translateX(-50%);*/
+		text-align: center;
+	}
+
+	&__a__image {
+		position: relative;
+		display: block;
+		margin-top: 10px; 
+		margin-bottom: 10px;
+		margin-left: 50%;
+		transform: translateX(-50%);
+		max-width: 80%;
+
+		border-radius: 13px;
+
+		@media (min-width: 800px) {
+			min-width: 65%;			
+		}
 	}
 
 	&--full-width {

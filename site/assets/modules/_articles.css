@@ -1,0 +1,15 @@
+
+
+a {
+	font-weight: 500;
+	color: #a83d19;
+}
+
+.articles__main-list {
+	color: #a83d19;
+	list-style: none;
+}
+
+.articles__main-list:hover {
+	color: white;
+}

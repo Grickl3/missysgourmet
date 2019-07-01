@@ -22,11 +22,15 @@
 		transition: height 1s;
 		transition: background-color .3s ease-out;
 		background-color: rgba($darkGrey, .80);
+
+		@media (min-width: 800px) {
+			z-index: 6;
+		}
 	}
 
 	&--open {
-		z-index: 3;
-		height: 225px;
+		z-index: 6;
+		height: 280px;
 		transition: height 1s;
 		transition: background-color .3s ease-out;
 		background-color: rgba($darkGrey, .95);
@@ -78,6 +82,7 @@
 	&__page-link {
 		/*float: right;*/
 		margin-right: 12px;
+		font-weight: 500;
 
 		@media (min-width: 800px) {
 			/*margin-right: 50px;*/
